@@ -4,17 +4,28 @@
     <meta charset="UTF-8">
     <title>Random Color Slot Game</title>
     <link rel="stylesheet" type="text/css" href="slots.css"/>
-    <script src="colorSlots.js"> </script>
+    
   </head>
   <body>
-  	<h1>Welcome to my random color slot game!</h1>
+  <div id="jumbo">
+    <h1>Welcome to my random color slot game!</h1>
     <h2>In order to win, all colors must match.</h2>
-	<button onclick = "inputNum()">click to play</button>
-	<div id="input">
-		<div id="one" class="pick"></div>
-		<div id="two" class="pick"></div>
-		<div id="three" class="pick"></div>
-		<div id="four" class="pick"></div>		
-	</div>
+  </div>
+    <div id="big">
+      <input type="button" value="click to try" id="button"/>
+        <div id="input">
+          <div class="pick" data-color></div>
+          <div class="pick" data-color></div>
+          <div class="pick" data-color></div>
+          <div class="pick" data-color></div>   
+        </div>
+        <div id="scoreBoard">
+          <div id="win">win:<lable id="positive">0</label></div>
+           <!-- comming soon <div id="ratio">win-lose=<label id="difference">0</label></div>-->
+          <div id="lose">lose:<lable id="negative">0</label></div>
+
+        </div>
+</div>
+  <script src="colorSlots.js"> </script>
   </body>
 </html>
